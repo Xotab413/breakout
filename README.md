@@ -1,2 +1,2 @@
 # breakout
-Course project named Arcanoid
+Course project named Arkanoid
