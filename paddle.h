@@ -20,6 +20,6 @@ class Paddle {
     QImage image;
     QRect rect;
     int dx;
-    static const int INITIAL_X = 200;
-    static const int INITIAL_Y = 360;
+    static const int INITIAL_X = 400;
+    static const int INITIAL_Y = 760;
 };

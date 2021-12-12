@@ -7,6 +7,8 @@ class Brick {
 
   public:
     Brick(int, int);
+    Brick(int x, int y, int e);
+    Brick(int x, int y, int e, int l);
     ~Brick();
 
   public:

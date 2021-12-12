@@ -24,7 +24,7 @@ class Ball {
     int ydir;
     QImage image;
     QRect rect;
-    static const int INITIAL_X = 230;
-    static const int INITIAL_Y = 355;
-    static const int RIGHT_EDGE = 300;
+    static const int INITIAL_X = 430;
+    static const int INITIAL_Y = 740;
+    static const int RIGHT_EDGE = 660;
 };

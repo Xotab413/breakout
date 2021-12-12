@@ -2,23 +2,20 @@
 #include "ball.h"
 
 Ball::Ball() {
-
   xdir = 1;
-  ydir = -1;
+  ydir = -2;
 
-  image.load("ball.png");
+  image.load(":/img/ball3.png");
 
   rect = image.rect();
   resetState();
 }
 
 Ball::~Ball() {
-
   std::cout << ("Ball deleted") << std::endl;
 }
 
 void Ball::autoMove() {
-
   rect.translate(xdir, ydir);
 
   if (rect.left() == 0) {
@@ -35,36 +32,29 @@ void Ball::autoMove() {
 }
 
 void Ball::resetState() {
-
   rect.moveTo(INITIAL_X, INITIAL_Y);
 }
 
 void Ball::setXDir(int x) {
-
   xdir = x;
 }
 
 void Ball::setYDir(int y) {
-
   ydir = y;
 }
 
 int Ball::getXDir() {
-
   return xdir;
 }
 
 int Ball::getYDir() {
-
   return ydir;
 }
 
 QRect Ball::getRect() {
-
   return rect;
 }
 
 QImage & Ball::getImage() {
-
   return image;
 }

@@ -1,16 +1,31 @@
 #include <iostream>
+#include <QMediaPlayer>
+#include <QMediaPlaylist>
+#include <QSound>
 #include "brick.h"
 
 Brick::Brick(int x, int y) {
+  image.load(":/img/brick_yellow.png");
+  destroyed = false;
+  rect = image.rect();
+  rect.translate(x, y);
+}
 
-  image.load("brickie.png");
+Brick::Brick(int x, int y, int) {
+  image.load(":/img/brick_red.png");
+  destroyed = false;
+  rect = image.rect();
+  rect.translate(x, y);
+}
+
+Brick::Brick(int x, int y, int , int ) {
+  image.load(":/img/brick_blue.png");
   destroyed = false;
   rect = image.rect();
   rect.translate(x, y);
 }
 
 Brick::~Brick() {
-
   std::cout << ("Brick deleted") << std::endl;
 }
 
@@ -35,6 +50,5 @@ bool Brick::isDestroyed() {
 }
 
 void Brick::setDestroyed(bool destr) {
-
   destroyed = destr;
 }
