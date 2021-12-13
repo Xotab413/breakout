@@ -22,7 +22,8 @@ HEADERS += \
     breakout.h \
     brick.h \
     mainwindow.h \
-    paddle.h
+    paddle.h \
+    ui_mainwindow.h
 
 FORMS += \
     window.ui
