@@ -7,7 +7,7 @@ int main(int argc, char *argv[]) {
 
   Breakout window;
 
-  window.resize(660, 900);
+  window.setFixedSize(QSize(660, 900));
   window.setWindowTitle("Breakout");
   window.show();
 
