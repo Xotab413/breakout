@@ -9,5 +9,6 @@
         <file>music/lose.wav</file>
         <file>music/music.wav</file>
         <file>music/win.wav</file>
+        <file>img/breakout.png</file>
     </qresource>
 </RCC>
