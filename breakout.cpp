@@ -145,7 +145,7 @@ void Breakout::keyReleaseEvent(QKeyEvent *e) {
 
 void Breakout::keyPressEvent(QKeyEvent *e) {
     int dx = 0;
-        std::cout << "left = " << paddle->getRect().left() << " right = " << paddle->getRect().right() << std::endl;
+//        std::cout << "left = " << paddle->getRect().left() << " right = " << paddle->getRect().right() << std::endl; -- for debugging
     switch (e->key()) {
     case Qt::Key_Left:
        if(paddle->getRect().left() <= 10) {
