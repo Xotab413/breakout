@@ -12,6 +12,7 @@ class Paddle {
   public:
     void resetState();
     void move();
+    void move(int);
     void setDx(int);
     QRect getRect();
     QImage & getImage();

@@ -26,7 +26,9 @@ void Paddle::move() {
 
     rect.moveTo(x, y);
 }
-
+void Paddle::move(int x) {
+    rect.moveTo(x, INITIAL_Y);
+}
 void Paddle::resetState() {
 
   rect.moveTo(INITIAL_X, INITIAL_Y);

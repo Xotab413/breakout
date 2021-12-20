@@ -129,11 +129,15 @@ void Breakout::keyReleaseEvent(QKeyEvent *e) {
     switch (e->key()) {
     case Qt::Key_Left:
         dx = 0;
+        if(paddle->getRect().left() <= 10)
+            paddle->move(10);
         paddle->setDx(dx);
         break;
 
     case Qt::Key_Right:
         dx = 0;
+        if(paddle->getRect().left() >= 634)
+            paddle->move(550);
         paddle->setDx(dx);
         break;
     }
@@ -141,15 +145,23 @@ void Breakout::keyReleaseEvent(QKeyEvent *e) {
 
 void Breakout::keyPressEvent(QKeyEvent *e) {
     int dx = 0;
-
+        std::cout << "left = " << paddle->getRect().left() << " right = " << paddle->getRect().right() << std::endl;
     switch (e->key()) {
     case Qt::Key_Left:
-        dx = -2;
+       if(paddle->getRect().left() <= 10) {
+           dx = 0;
+           paddle->move(10);
+       }
+        else dx = -2;
         paddle->setDx(dx);
         break;
 
     case Qt::Key_Right:
-        dx = 2;
+        if(paddle->getRect().right() >= 634) {
+            dx = 0;
+            paddle->move(550);
+        }
+        else dx = 2;
         paddle->setDx(dx);
         break;
 
