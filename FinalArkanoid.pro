@@ -10,20 +10,20 @@ CONFIG += c++20
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
-    ball.cpp \
-    breakout.cpp \
-    brick.cpp \
-    main.cpp \
-    mainwindow.cpp \
-    paddle.cpp
+    sources/ball.cpp \
+    sources/breakout.cpp \
+    sources/brick.cpp \
+    sources/main.cpp \
+    sources/mainwindow.cpp \
+    sources/paddle.cpp
 
 HEADERS += \
-    ball.h \
-    breakout.h \
-    brick.h \
-    mainwindow.h \
-    paddle.h \
-    ui_mainwindow.h
+    headers/ball.h \
+    headers/breakout.h \
+    headers/brick.h \
+    headers/mainwindow.h \
+    headers/paddle.h \
+    headers/ui_mainwindow.h \
 
 FORMS += \
     window.ui
